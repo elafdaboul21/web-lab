@@ -1,0 +1,84 @@
+/* LAB-1: App styles - Personalized */
+.app-container {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.app-container h1 {
+  font-size: 1.9rem;
+  color: #1e3a8a;
+  margin-bottom: 0.4rem;
+}
+
+.app-container h2 {
+  font-size: 1.2rem;
+  color: #3b82f6;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.info-card {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 1.25rem 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.info-card p {
+  color: #1e40af;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.hakkimda-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.hakkimda-card h3 {
+  color: #1e3a8a;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hakkimda-card h3:first-child {
+  margin-top: 0;
+}
+
+.hakkimda-card p {
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.hakkimda-card ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.hakkimda-card ul li {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+}
+
+.lab-note {
+  color: #9ca3af;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eyllaf Dabboul - Kisisel Portfolyo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Uygulama-3: Skip Navigation (Ana icerige atla) -->
+  <a href="#main-content" class="skip-link">Ana icerige atla</a>
+
+  <!-- Uygulama-1 & 5: Semantik Header ve Nav -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-text">ED</span>
+        <span class="logo-name">Eyllaf Dabboul</span>
+      </div>
+
+      <!-- Uygulama-3: aria-label eklendi -->
+      <nav aria-label="Ana navigasyon">
+        <ul>
+          <li><a href="#hakkimda">Hakkimda</a></li>
+          <li><a href="#projeler">Projeler</a></li>
+          <li><a href="#iletisim">Iletisim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Uygulama-1 & 5: Semantik Main -->
+  <main id="main-content">
+
+    <!-- Uygulama-1 & 5: Hakkimda Section -->
+    <section id="hakkimda" aria-labelledby="hakkimda-baslik">
+      <div class="section-inner">
+        <h2 id="hakkimda-baslik">Hakkimda</h2>
+
+        <!-- Uygulama-2: figure + img alt + figcaption -->
+        <figure class="profil-figure">
+          <img
+            src="https://ui-avatars.com/api/?name=Eyllaf+Dabboul&size=200&background=1e3a8a&color=fff&bold=true"
+            alt="Eyllaf Dabboul'un profil fotografi"
+            width="160"
+            height="160"
+            class="profil-img"
+          />
+          <figcaption>Eyllaf Dabboul</figcaption>
+        </figure>
+
+        <div class="hakkimda-text">
+          <!-- Uygulama-2: Heading hiyerarsisi h1 (sayfada yok - title var) → h2 dogru -->
+          <p>
+            Merhabalar! Ben Eyllaf Dabboul, ogrenci numarim 220541607.
+            Web tasarimi ve programlama alaninda kendimi gelistirmeye calisiyorum.
+            Modern web teknolojileri, kullanici deneyimi ve erisebilir arayuzler
+            uzerine calisiyorum.
+          </p>
+
+          <h3>Kullandigim Teknolojiler</h3>
+          <ul class="tech-list">
+            <li>HTML5 &amp; CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Git &amp; GitHub</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uygulama-1 & 5: Projeler Section -->
+    <section id="projeler" aria-labelledby="projeler-baslik">
+      <div class="section-inner">
+        <h2 id="projeler-baslik">Projelerim</h2>
+
+        <div class="projeler-grid">
+
+          <!-- Her proje article icinde - bagimsiz, kendi basina anlamli -->
+          <article class="proje-kart">
+            <figure class="proje-figure">
+              <img
+                src="https://via.placeholder.com/400x220/1e3a8a/ffffff?text=Web+Lab+Projesi"
+                alt="Web Lab projesi ekran goruntusu - Vite ve React ile olusturulmus kisisel portfolyo sayfasi"
+                width="400"
+                height="220"
+                class="proje-img"
+              />
+              <figcaption>Web Lab - Portfolyo Sayfasi</figcaption>
+            </figure>
+            <div class="proje-icerik">
+              <h3>Web Lab - Portfolyo Sayfasi</h3>
+              <p>
+                Vite + React + TypeScript kullanilarak olusturulan kisisel portfolyo
+                projesi. Semantik HTML5, erisebilirlik ilkeleri ve form dogrulama
+                uygulanmistir.
+              </p>
+              <ul class="proje-teknolojiler">
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Vite</li>
+                <li>HTML5</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="proje-kart">
+            <figure class="proje-figure">
+              <img
+                src="https://via.placeholder.com/400x220/2563eb/ffffff?text=To-Do+Uygulamasi"
+                alt="To-Do uygulamasi ekran goruntusu - gorev ekleme ve silme ozellikleri gosteren arayuz"
+                width="400"
+                height="220"
+                class="proje-img"
+              />
+              <figcaption>To-Do Uygulamasi</figcaption>
+            </figure>
+            <div class="proje-icerik">
+              <h3>To-Do Uygulamasi</h3>
+              <p>
+                Basit gorev yonetim uygulamasi. Gorev ekleme, silme ve tamamlama
+                ozellikleri iceren React tabanli proje.
+              </p>
+              <ul class="proje-teknolojiler">
+                <li>React</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Uygulama-1 & 4 & 5: Iletisim Section + Form -->
+    <section id="iletisim" aria-labelledby="iletisim-baslik">
+      <div class="section-inner">
+        <h2 id="iletisim-baslik">Iletisim</h2>
+
+        <!-- Uygulama-4: Dogrulamali iletisim formu -->
+        <form action="#" method="POST" novalidate class="iletisim-form">
+          <fieldset>
+            <legend>Iletisim Formu</legend>
+
+            <div class="form-group">
+              <label for="name">Ad Soyad:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="2"
+                aria-describedby="name-error"
+                placeholder="Ornek: Ali Veli"
+              />
+              <small id="name-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-posta:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                aria-describedby="email-error"
+                placeholder="Ornek: ad@mail.com"
+              />
+              <small id="email-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Konu:</label>
+              <select id="subject" name="subject" required aria-describedby="subject-error">
+                <option value="">-- Seciniz --</option>
+                <option value="is">Is Teklifi</option>
+                <option value="soru">Soru</option>
+                <option value="oneri">Oneri</option>
+              </select>
+              <small id="subject-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mesajiniz:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                minlength="10"
+                aria-describedby="message-error"
+                placeholder="Mesajinizi buraya yaziniz..."
+              ></textarea>
+              <small id="message-error" class="error-msg" role="alert"></small>
+            </div>
+
+            <button type="submit">Gonder</button>
+          </fieldset>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Uygulama-1 & 5: Semantik Footer -->
+  <footer>
+    <div class="footer-inner">
+      <p>&copy; 2025 Eyllaf Dabboul. Tum haklari saklidir.</p>
+      <div class="sosyal-medya">
+        <a
+          href="https://github.com/elafdaboul21"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub profilini ziyaret et"
+        >GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="form-validation.js"></script>
+</body>
+</html>
