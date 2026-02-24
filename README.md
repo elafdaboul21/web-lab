@@ -58,34 +58,7 @@ yapilari uygulanarak kisisel portfolyo sayfasi olusturulmustur.
 - Lighthouse erisebilirlik testi (hedef: 90+ puan)
 
 ---
-
-## Branch Yapisi
-
-| Branch | Amac |
-|--------|------|
-| `main` | Kararsiz, her zaman calisir kod |
-| `feature/personalize-ui` | LAB-1: Kisisel bilgi ekleme |
-| `feature/semantic-portfolio` | LAB-2: Portfolyo sayfasi |
-
----
-
-## Proje Yapisi
-
-```
-web-labs/
-├── public/
-│   └── vite.svg
-├── src/
-│   ├── App.tsx          # Ana React bileşeni
-│   ├── App.css          # Uygulama stilleri
-│   ├── index.css        # Global stiller
-│   └── main.tsx         # React entry point
-├── index.html
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── .gitignore
-```
-<img width="1284" height="934" alt="Screenshot 2026-02-24 at 21 59 46" src="https://github.com/user-attachments/assets/1e99b56d-52a9-42b8-a019-7f3fa8100957" />
-<img width="1282" height="935" alt="Screenshot 2026-02-24 at 21 59 27" src="https://github.com/user-attachments/assets/6cadeba1-072f-4f6d-afea-5adf42003766" />
-
+<div>
+  <img src="https://github.com/user-attachments/assets/1e99b56d-52a9-42b8-a019-7f3fa8100957" width="48%"/>
+  <img src="https://github.com/user-attachments/assets/6cadeba1-072f-4f6d-afea-5adf42003766" width="48%"/>
+</div>
